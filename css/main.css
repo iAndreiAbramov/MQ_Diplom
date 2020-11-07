@@ -141,14 +141,14 @@
   .article-title--color-white {
     color: #ffffff;
   }
-  
-  .article-title a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
+
   .article-title:hover {
     color: #b59f5b;
+  }
+  
+  .article-title-link {
+    color: inherit;
+    text-decoration: none;
   }
   
   .article-meta {
