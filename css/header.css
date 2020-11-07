@@ -22,13 +22,6 @@
     opacity: 0.6;
   }
   
-  .container {
-    position: relative;
-    margin: 0 auto;
-    width: 1200px;
-    padding: 0 15px 0;
-  }
-  
   .header-top {
     display: flex;
     justify-content: space-between;

@@ -18,3 +18,10 @@ body {
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 15px 0;
+}
