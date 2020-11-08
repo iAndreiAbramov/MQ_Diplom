@@ -54,6 +54,7 @@
 
 .trend-item-image {
     width: 100%;
+    height: 100%;
 }
 
 .trend-item-text {
@@ -176,14 +177,22 @@
     color: #0f0d0e;
 }
 
+/* .products {
+    display: flex;
+    flex-direction: column;
+} */
+
 .products-wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 64px;
+    height: 440px;
 }
 
 .product {
+    position: relative;
     width: 30%;
+    height: 100%;
     margin-right: 5%;
     text-align: center;
 }
@@ -193,18 +202,26 @@
 }
 
 .product-image {
+    margin-bottom: -30px;
     text-align: center;
 }
 
 .product-description-wrapper {
-    padding: 35px;
+    position: absolute;
+    top: 170px;
+    bottom: 0;
+    padding: 55px 20px 20px;
     border: 3px solid #b59f5b;
     text-align: left;
     text-decoration: none;
 }
 
+.product-description {
+    margin-bottom: 26px;
+}
+
 .product-description-title {
-    margin-top: 54px;
+    margin-top: 0;
     margin-bottom: 0;
     font-size: 20px;
     font-weight: 700;
@@ -212,13 +229,19 @@
     color: #0f0d0e;
 }
 
-.product-offer {
-    display: flex;
-}
-
 .product-description-text {
     margin: 0;
     padding: 0;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.highlighted-text {
+    color: #b59f5b;
+}
+
+.product-description:hover .highlighted-text {
+    text-decoration: underline;
 }
 
 .product-description-link {
@@ -226,12 +249,48 @@
     text-decoration: none;
 }
 
+.product-offer {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    font-weight: 700;
+    line-height: 1;
+}
+
 .old-price {
     margin: 0;
     padding: 0;
+    font-size: 14px;
+    text-decoration: line-through;
 }
 
 .new-price {
     margin: 0;
-    padding: 0;
+    padding: 0 0 12px;
+    font-size: 20px;
+    justify-self: flex-end;
+}
+
+.shop-link {
+    display: block;
+    box-sizing: content-box;
+    padding: 1.2em 1.7em;
+    background: #b59f5b;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.shop-link:hover {
+    background: #323232;
 }
