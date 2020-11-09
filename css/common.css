@@ -3,6 +3,7 @@
 }
 
 body {
+  min-width: 320px;
   margin: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -19,9 +20,20 @@ body {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-.container {
-  position: relative;
-  margin: 0 auto;
-  width: 1200px;
-  padding: 0 15px 0;
+@media (min-width: 1201px) {
+
+  .container {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 15px 0;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+  .container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 35px;
+  }
 }

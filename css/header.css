@@ -1,4 +1,6 @@
-.main-page-header {
+@media (min-width: 1201px) {
+
+  .main-page-header {
     min-width: 1200px;
     margin-bottom: 64px;
     padding: 29px 0 146px;
@@ -10,7 +12,7 @@
     background-size: cover;
     background-position: center center;
   }
-  
+
   .main-page-header::before {
     position: absolute;
     top: 0;
@@ -21,49 +23,53 @@
     background-color: #000000;
     opacity: 0.6;
   }
-  
+
   .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .header-logo {
     display: block;
     width: 182px;
   }
-  
+
+  .main-menu-button {
+    display: none;
+  }
+
   .header-menu {
     padding: 0;
     margin: 0;
   }
-  
+
   .header-menu-item {
     display: inline-block;
     text-transform: uppercase;
     font-size: 13px;
   }
-  
+
   .header-menu-item:nth-child(n + 2) {
     margin-left: 30px;
   }
-  
+
   .header-menu-link {
     color: inherit;
     text-decoration: none;
   }
-  
+
   .header-menu-link:hover {
     text-decoration: underline;
   }
-  
+
   .header-title-wrapper {
     margin: 127px auto 0;
     padding: 0;
     width: 740px;
     text-align: center;
   }
-  
+
   .header-title {
     margin: 0 0 35px;
     padding: 0;
@@ -72,7 +78,112 @@
     text-transform: uppercase;
     line-height: 1.67;
   }
-  
+
   .header-title:last-child {
     margin-bottom: 0;
   }
+
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+
+  .main-page-header {
+    position: relative;
+    min-width: 641px;
+    margin-bottom: 50px;
+    padding: 50px 0px 120px;
+    color: #ffffff;
+    background-image: url("../images/banner-bg-tablet.jpg");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .main-page-header::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-color: #000000;
+    opacity: 0.6;
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-logo {
+    display: block;
+    width: 155px;
+  }
+
+  .main-menu-button {
+    width: 1em;
+    height: 0.9em;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    font-size: 24px;
+    position: relative;
+    text-indent: -9999px;
+    cursor: pointer;
+  }
+
+  .main-menu-button::before {
+    top: 0;
+  }
+
+  .main-menu-button::after {
+    bottom: 0;
+  }
+
+  .main-menu-button::before, .main-menu-button::after {
+    content: "";
+    width: 100%;
+    height: 15%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+  }
+
+  .main-menu-button-label {
+    width: 100%;
+    height: 15%;
+    margin-top: -0.05em;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-title-wrapper {
+    margin: 102px 45px 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-title {
+    margin: 0 0 35px;
+    width: calc(100% - 70px);
+    padding: 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.38;
+  }
+
+  .header-title:last-child {
+    margin-bottom: 0;
+  }
+
+}
