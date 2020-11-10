@@ -37,3 +37,11 @@ body {
     padding: 0 35px;
   }
 }
+
+@media (max-width: 640px) {
+  .container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
