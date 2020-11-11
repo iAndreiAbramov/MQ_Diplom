@@ -26,8 +26,6 @@
     .trends-wrapper {
         display: flex;
         justify-content: space-between;
-        /* margin: 0;
-        padding: 0; */
     }
 
     .trend-item {
@@ -66,8 +64,6 @@
         bottom: 5%;
         border: 3px solid #b59f5b;
         text-align: left;
-        /* text-decoration: none;
-        list-style: none; */
     }
 
     .main-page-content {
