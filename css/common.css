@@ -56,4 +56,10 @@ body {
     margin: 0 auto;
     padding: 0 15px;
   }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 44px;
+  }
 }

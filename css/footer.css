@@ -78,3 +78,10 @@
       color: inherit;
     }
   }
+
+  @media (max-width: 640px) {
+    
+    .footer-socials-item:nth-child(n + 2) {
+      margin-left: 28px;
+    }
+  }
