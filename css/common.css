@@ -28,6 +28,12 @@ body {
     width: 1200px;
     padding: 0 15px 0;
   }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
@@ -35,6 +41,12 @@ body {
     position: relative;
     margin: 0 auto;
     padding: 0 35px;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
   }
 }
 
