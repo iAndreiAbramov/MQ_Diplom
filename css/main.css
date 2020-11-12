@@ -336,7 +336,7 @@
         opacity: 0.6;
     }
 
-    .trend-item:last-child() {
+    .trend-item:nth-child(even) {
         margin-right: 0;
     }
 
