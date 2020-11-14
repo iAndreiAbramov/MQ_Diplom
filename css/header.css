@@ -1,5 +1,3 @@
-@media (min-width: 1201px) {
-
   .main-page-header {
     min-width: 1200px;
     margin-bottom: 64px;
@@ -83,8 +81,6 @@
     margin-bottom: 0;
   }
 
-}
-
 @media (min-width: 641px) and (max-width: 1200px) {
 
   .main-page-header {
@@ -94,10 +90,6 @@
     padding: 50px 0px 120px;
     color: #ffffff;
     background-image: url("../images/banner-bg-tablet.jpg");
-    background-color: #000000;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
   }
 
   .main-page-header::before {
