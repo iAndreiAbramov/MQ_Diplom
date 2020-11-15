@@ -109,6 +109,10 @@
     cursor: pointer;
   }
 
+  .button-general:hover {
+    background-color: #323232;
+  }
+
   .search-button {
     width: 48px;
     height: 48px;
@@ -188,46 +192,38 @@
     color: #b59f5b;
   }
 
-@media (min-width: 641px) and (max-width: 1200px) {
-  
-  .sidebar {
-    width: 40%;
+  @media (min-width: 641px) and (max-width: 1200px) {
+    .sidebar {
+      width: 40%;
+    }
+    .tags-list-item {
+      display: block;
+      margin: 7px 7px 0 0;
+      padding: 6px 13px;
+      border: solid 3px #f4f3f1;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      color: #0f0d0e;
+      text-decoration: none;
+    }
   }
-
-  .tags-list-item {
-    display: block;
-    margin: 7px 7px 0 0;
-    padding: 6px 13px;
-    border: solid 3px #f4f3f1;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-    color: #0f0d0e;
-    text-decoration: none;
-  }
-
-}
 
   @media (max-width: 640px) {
     .sidebar {
       width: 100%;
     }
-  
-      .sidebar-block:nth-child(n + 2) {
-        margin-top: 40px;
-      }
-    
-      .sidebar-title {
-        font-size: 16px;
-      }
-    
-      .form-row {
-        margin: 0;
-        padding: 0;
-      }
-    
-      .sidebar-input-field:focus {
-        outline: solid 2px #b59f5b;
-      }
-    
+    .sidebar-block:nth-child(n+2) {
+      margin-top: 40px;
+    }
+    .sidebar-title {
+      font-size: 16px;
+    }
+    .form-row {
+      margin: 0;
+      padding: 0;
+    }
+    .sidebar-input-field:focus {
+      outline: solid 2px #b59f5b;
+    }
   }

@@ -26,7 +26,7 @@
         </a>
         <nav class="main-menu">
 
-          <button class="main-menu-button">
+          <button type="button" class="main-menu-button">
             <span class="main-menu-button-label">открыть меню</span>
           </button>
 
@@ -599,31 +599,63 @@
 
   </footer>
 
-<aside class="popup">
+  <aside class="popup popup-hidden">
+  
+    <form action="#" class="popup-form">
+  
+      <button type="button" class="popup-close-button">
+        <span class="popup-close-button-label visually-hidden">
+          закрыть форму
+        </span>
+      </button>
 
-  <h2 class="main-title">
-    ваш фидбек
-  </h2>
+      <h2 class="main-title">
+        ваш фидбек
+      </h2>
 
-  <label for="###">
-    <span class="question">как часто вы заходите на сайт</span>
-    <input type="text">
-  </label>
+      <div class="popup-form-row">
+      
+        <label for="popup-selection">
+          <span class="form-hint">Как часто вы заходите на сайт?</span>
+      
+          <select name="#" id="popup-selection" class="popup-select-field">
+            <option selected value="Почти каждый день">Почти каждый день</option>
+            <option value="Раз в несколько дней">Раз в несколько дней</option>
+            <option value="Раз в несколько недель">Раз в несколько недель</option>
+            <option value="Несколько раз в год">Несколько раз в год</option>
+          </select>
+        </label>
 
-  <label for="###">
-    <span class="question">вы подписаны на e-mail рассылку?</span>
-    <input type="radio">
-  </label>
+      </div>
+      
+      <div class="popup-form-row">
+      
+        <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
+        <label class="popup-radio-group">
+      
+          <input type="radio" class="popup-radio-input" name="popup-radio">
+          <span class="popup-radio-text">Да</span>
+        </label>
 
-  <label for="###">
-    <span class="question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-    <textarea name="##" id="##" cols="30" rows="10"></textarea>
-  </label>
+        <label class="popup-radio-group">
+          <input type="radio" class="popup-radio-input" name="popup-radio">
+          <span class="popup-radio-text">Нет</span>
+        </label>
 
-  <button class="button-general sidebar-subscription-button" title="отправить форму">отправить</button>
+      </div>
+      
+      <div class="popup-form-row">
+        <label for="popup-textarea">
+          <span class="form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+          <textarea name="##" id="popup-textarea" placeholder="Может, больше рецептов?" class="popup-text-field"></textarea>
+        </label>
+      </div>
 
-</aside>
+      <button class="button-general popup-subscription-button" title="отправить форму">отправить</button>
+      </form>
+  </aside>
 
+<script src="./js/popup.js"></script>
 </body>
 
 </html>

@@ -80,7 +80,7 @@
     padding: 10%;
     border: 3px solid #b59f5b;
     text-align: left;
-    z-index: 99;
+    z-index: 2;
     flex-grow: 1;
 }
 
