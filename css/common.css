@@ -22,35 +22,13 @@ body {
 
 .container {
   position: relative;
+  max-width: 1200px;
   margin: 0 auto;
-  /* min-width: 1201px; */
-  padding: 0 15px 0;
-}
-
-.page {
-  margin-bottom: 64px;
+  padding: 0 15px;
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
   .container {
-    /* min-width: 641px; */
-    margin: 0 auto;
     padding: 0 35px;
-  }
-
-  .page {
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 640px) {
-  .container {
-    /* min-width: 320px; */
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-
-  .page {
-    margin-bottom: 44px;
   }
 }
