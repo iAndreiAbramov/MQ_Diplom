@@ -81,13 +81,14 @@
     }
 
     .main-page-content {
+        max-width: 1170px;
         display: flex;
-        margin-bottom: 64px;
         justify-content: space-between;
+        margin-bottom: 64px;
     }
 
     .main-articles {
-        width: 778px;
+        width: 66%;
     }
 
     .main-article {
@@ -391,7 +392,6 @@
 
     .products-wrapper {
         flex-wrap: wrap;
-        align-items: auto;
     }
 
     .product {

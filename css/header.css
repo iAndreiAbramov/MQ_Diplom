@@ -103,18 +103,12 @@
     opacity: 0.6;
   }
 
-  .header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .header-logo {
-    display: block;
     width: 155px;
   }
 
   .main-menu-button {
+    display: block;
     width: 1em;
     height: 0.9em;
     border: none;
@@ -159,22 +153,12 @@
 
   .header-title-wrapper {
     margin: 102px auto 0;
-    padding: 0;
     width: 100%;
-    text-align: center;
   }
 
   .header-title {
-    margin: 0 0 35px;
-    padding: 0;
     font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
     line-height: 1.38;
-  }
-
-  .header-title:last-child {
-    margin-bottom: 0;
   }
 
 }
@@ -186,35 +170,15 @@
     min-width: 320px;
     margin-bottom: 44px;
     padding: 32px 0px 216px;
-    color: #ffffff;
     background-image: url("../images/banner-mobile.jpg");
-    background-color: #000000;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
-
-  .main-page-header::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: "";
-    background-color: #000000;
-    opacity: 0.6;
   }
 
   .header-top {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 35px;
   }
 
   .header-logo {
-    display: block;
     width: 82%;
     order: 1;
   }
@@ -224,6 +188,7 @@
   }
 
   .main-menu-button {
+    display: block;
     margin-bottom: 172px;
     width: 1em;
     height: 0.9em;
@@ -275,16 +240,8 @@
   }
 
   .header-title {
-    margin: 0 0 35px;
-    padding: 0;
     font-size: 26px;
-    font-weight: 700;
-    text-transform: uppercase;
     line-height: 1.38;
-  }
-
-  .header-title:last-child {
-    margin-bottom: 0;
   }
 
 }

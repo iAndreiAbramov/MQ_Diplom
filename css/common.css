@@ -20,46 +20,37 @@ body {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-@media (min-width: 1201px) {
+.container {
+  position: relative;
+  margin: 0 auto;
+  /* min-width: 1201px; */
+  padding: 0 15px 0;
+}
 
-  .container {
-    position: relative;
-    margin: 0 auto;
-    width: 1200px;
-    padding: 0 15px 0;
-  }
-
-  .page {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 64px;
-  }
+.page {
+  margin-bottom: 64px;
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
   .container {
-    position: relative;
+    /* min-width: 641px; */
     margin: 0 auto;
     padding: 0 35px;
   }
 
   .page {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 50px;
   }
 }
 
 @media (max-width: 640px) {
   .container {
-    position: relative;
+    /* min-width: 320px; */
     margin: 0 auto;
     padding: 0 15px;
   }
 
   .page {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 44px;
   }
 }
