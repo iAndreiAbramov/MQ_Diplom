@@ -75,7 +75,7 @@
 
 .trend-item-text {
     position: relative;
-    align-self: end;
+    align-self: flex-end;
     box-sizing: content-box;
     padding: 10%;
     border: 3px solid #b59f5b;
@@ -408,11 +408,9 @@
 }
 
 @media (max-width: 640px) {
-
     .page {
         margin-bottom: 44px;
-      }
-
+    }
     .trends {
         margin-bottom: 50px;
     }
