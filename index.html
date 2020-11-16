@@ -393,10 +393,12 @@
         </section>
 
         <form class="sidebar-search-form" action="#0">
-          <span class="visually-hidden">Введите поисковый запрос</span>
-          <input type="search" name="sidebar-search" id="sidebar-search-field"
-            class="sidebar-input-field sidebar-search-field" placeholder="Найти..." required>
-          <button class="button-general search-button" title="Поиск" id="sidebar-serach-button">
+          <label for="sidebar-search-field" class="form-row">
+            <span class="visually-hidden">Введите поисковый запрос</span>
+            <input type="search" name="sidebar-search" id="sidebar-search-field"
+              class="sidebar-input-field sidebar-search-field" placeholder="Найти..." required>
+          </label>
+          <button class="button-general search-button form-row" title="Поиск" id="sidebar-serach-button">
             <span class="visually-hidden">Нажмите, чтобы начать поиск</span>
           </button>
         </form>
@@ -421,32 +423,29 @@
         <section class="sidebar-block">
           <h2 class="sidebar-title">Теги</h2>
           <ul class="sidebar-tags-list">
-            <li><a class="tags-list-item" href="#0">fashion</a></li>
-            <li><a class="tags-list-item" href="#0">music</a></li>
-            <li><a class="tags-list-item" href="#0">lifestyle</a></li>
-            <li><a class="tags-list-item" href="#0">art</a></li>
-            <li><a class="tags-list-item" href="#0">interior</a></li>
-            <li><a class="tags-list-item" href="#0">travel</a></li>
-            <li><a class="tags-list-item" href="#0">food</a></li>
-            <li><a class="tags-list-item" href="#0">health</a></li>
+            <li class="tags-list-item"><a class="tags-list-link" href="#0">fashion</a></li>
+            <li class="tags-list-item"><a class="tags-list-link" href="#0">music</a></li>
+            <li class="tags-list-item"><a class="tags-list-link" href="#0">lifestyle</a></li>
+            <li class="tags-list-item"><a class="tags-list-link" href="#0">art</a></li>
+            <li class="tags-list-item"><a class="tags-list-link" href="#0">interior</a></li>
+            <li class="tags-list-item"><a class="tags-list-link" href="#0">travel</a></li>
+            <li class="tags-list-item"><a class="tags-list-link" href="#0">food</a></li>
+            <li class="tags-list-item"><a class="tags-list-link" href="#0">health</a></li>
           </ul>
         </section>
 
         <section class="sidebar-block">
           <h2 class="sidebar-title">Темы</h2>
           <ul class="sidebar-topics-list">
-            <li class="topics-list-item"><a href="#0" class="topics-list-link">Красота<sup
-                  class="topics-counter">12</sup></a></li>
-            <li class="topics-list-item"><a href="#0" class="topics-list-link">Здоровье<sup
-                  class="topics-counter">4</sup></a></li>
-            <li class="topics-list-item"><a href="#0" class="topics-list-link">Образ жизни<sup
-                  class="topics-counter">145</sup></a></li>
-            <li class="topics-list-item"><a href="#0" class="topics-list-link">Музыка<sup
-                  class="topics-counter">28</sup></a></li>
-            <li class="topics-list-item"><a href="#0" class="topics-list-link">Спорт<sup
-                  class="topics-counter">62</sup></a></li>
-            <li class="topics-list-item"><a href="#0" class="topics-list-link">Йога<sup class="topics-counter">8</sup></a>
+            <li class="topics-list-item"><a href="#0" class="topics-list-link">Красота</a><span class="topics-counter">12</span>
             </li>
+            <li class="topics-list-item"><a href="#0" class="topics-list-link">Здоровье</a><span class="topics-counter">4</span>
+            </li>
+            <li class="topics-list-item"><a href="#0" class="topics-list-link">Образ жизни</a><span
+                class="topics-counter">145</span></li>
+            <li class="topics-list-item"><a href="#0" class="topics-list-link">Музыка</a><span class="topics-counter">28</span></li>
+            <li class="topics-list-item"><a href="#0" class="topics-list-link">Спорт</a><span class="topics-counter">62</span></li>
+            <li class="topics-list-item"><a href="#0" class="topics-list-link">Йога</a><span class="topics-counter">8</span></li>
           </ul>
         </section>
 
@@ -600,9 +599,9 @@
   </footer>
 
   <aside class="popup popup-hidden">
-  
+
     <form action="#" class="popup-form">
-  
+
       <button type="button" class="popup-close-button">
         <span class="popup-close-button-label visually-hidden">
           закрыть форму
@@ -614,10 +613,10 @@
       </h2>
 
       <div class="popup-form-row">
-      
+
         <label for="popup-selection">
           <span class="form-hint">Как часто вы заходите на сайт?</span>
-      
+
           <select name="#" id="popup-selection" class="popup-select-field">
             <option selected value="Почти каждый день">Почти каждый день</option>
             <option value="Раз в несколько дней">Раз в несколько дней</option>
@@ -627,12 +626,12 @@
         </label>
 
       </div>
-      
+
       <div class="popup-form-row">
-      
+
         <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
         <label class="popup-radio-group">
-      
+
           <input type="radio" class="popup-radio-input" name="popup-radio">
           <span class="popup-radio-text">Да</span>
         </label>
@@ -643,7 +642,7 @@
         </label>
 
       </div>
-      
+
       <div class="popup-form-row">
         <label for="popup-textarea">
           <span class="form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
@@ -652,10 +651,10 @@
       </div>
 
       <button class="button-general popup-subscription-button" title="отправить форму">отправить</button>
-      </form>
+    </form>
   </aside>
 
-<script src="./script/popup.js"></script>
+  <script src="./script/popup.js"></script>
 </body>
 
 </html>

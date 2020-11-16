@@ -161,6 +161,11 @@
     border: solid 3px #b59f5b;
   }
 
+  .tags-list-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
   .sidebar-topics-list {
     margin: 0;
     padding: 0;
@@ -171,10 +176,13 @@
     display: block;
     box-sizing: content-box;
     padding: 0 0 15px 1px;
-    margin-bottom: 15px;
     border-bottom: solid 1px #eeeeee;
     font-size: 14px;
     font-weight: 700;
+  }
+
+  .topics-list-item:nth-child(n+2) {
+    margin-top: 15px;
   }
 
   .topics-list-link {
